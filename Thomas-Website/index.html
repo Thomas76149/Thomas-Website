@@ -3,80 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas's erste Website</title>
-
-  
+  <title>Thomas' Erste Website</title>
   <style>
-
     body {
-
-      background-color: antiquewhite;
-
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
     
-
-  .bild1 {
-
-    width: 50%;
-    height: 60vh;
-    object-fit: cover;
-    position: absolute;
-    right: 32px;
-    top: 32px;
-  }
-
-
-
-  .text1 {
-    text-align: left;
-    margin-right: 60%
-  }
-
-  .menu-link {
-
-    color: rgb(216, 27, 27);
-    text-decoration: none;
-   
-  }
-
-  .menu-link:hover {
-
-    text-decoration: underline;
-    color: blue;
-
-  }
-
-
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .intro img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+    
+    .intro {
+      text-align: center;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    li {
+      background: #ff6347;
+      color: white;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+    
+    .projects a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      background: #007bff;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    .projects a:hover {
+      background: #0056b3;
+    }
   </style>
-
 </head>
 <body>
-  
+  <header>
+    <h1>Willkommen auf meiner Website!</h1>
+  </header>
 
-  <h1>Hallo, das ist meine erste Website!</h1>
-  <p>Mein Name ist Thomas und ich interessiere mich für das Programmieren.</p>
-
-  <li>Ich bin 14 Jahre alt </li>
-  <li>Ich spiele gerne Tennis</li>
-  <li>Ich interessiere mich für das Programmieren</li>
-  
-  <p class="text1"> Wie gesagt, interessiere ich mich sehr für das Programmieren und habe auch schon ein paar Projekte gemacht. Wenn du diese sehen willst, dann drücke doch auf einen dieser Links.
-  </p>
-
-  <img class="bild1" src="https://www.n-tv.de/img/192585-1242852413000/o/1536/1536/Der-Name-Eurofighter-gilt-nur-fur-die-in-Europa-verwendete-Version.jpg">
-
-
-  <a class="menu-link" href="https://thomas76149.github.io/Thomas-Website/Spiel%20Tutorial1/game.html" target="_blank"><li>Jet Spiel</li></a>
-  <a class="menu-link" href="https://thomas76149.github.io/Thomas-Website/Adventskalender%20Tutorial1/index.html" target="_blank"><li>Adventskalender</li></a>
-  <a class="menu-link" href="https://thomas76149.github.io/Thomas-Website/Todoliste%20Tutorial1/index.html" target="_blank"><li>To-Do Liste</li></a>
-
-
-
-
-
+  <div class="container">
+    <div class="intro">
+      <h2>Über mich</h2>
+      <p>Hallo! Mein Name ist Thomas und ich bin 14 Jahre alt. Ich spiele gerne Tennis und liebe das Programmieren!</p>
+      <img src="https://itt.jdkranz.de/wp-content/uploads/2020/04/45192_2-_hor_adobe-1620x1080-q65.jpg"
+    </div>
+    
+    <h2>Meine Interessen</h2>
+    <ul>
+      <li>Ich bin 14 Jahre alt</li>
+      <li>Ich spiele gerne Tennis</li>
+      <li>Ich interessiere mich für das Programmieren</li>
+    </ul>
+    
+    <h2>Meine Projekte</h2>
+    <div class="projects">
+      <a href="https://thomas76149.github.io/Thomas-Website/Spiel%20Tutorial1/game.html" target="_blank">Jet Spiel</a>
+      <a href="https://thomas76149.github.io/Thomas-Website/Adventskalender%20Tutorial1/index.html" target="_blank">Adventskalender</a>
+      <a href="https://thomas76149.github.io/Thomas-Website/Todoliste%20Tutorial1/index.html" target="_blank">To-Do Liste</a>
+    </div>
+  </div>
 </body>
 </html>
-
-
-
-
