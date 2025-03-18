@@ -59,3 +59,16 @@ body {
     .projects a:hover {
       background: #0056b3;
     }
+
+.hobbys-container {
+display: flex;
+ justify-content: space-between;
+gap: 10px;
+}
+
+.hobbys {
+      widht: 48%;
+      border-radius: 10px;
+      margin: 10px;
+}
+
