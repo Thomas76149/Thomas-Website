@@ -61,14 +61,14 @@ body {
     }
 
 .hobbys-container {
-display: flex;
- justify-content: space-between;
-gap: 10px;
+  display: flex;  
+  justify-content: space-between; 
+  gap: 10px;  
 }
 
 .hobbys {
-      widht: 48%;
-      border-radius: 10px;
-      margin: 10px;
+  width: 48%; 
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
