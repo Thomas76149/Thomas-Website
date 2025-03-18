@@ -64,10 +64,10 @@ body {
   display: flex;  
   justify-content: center; 
   gap: 10px;  
+  felx: wrap;
 }
 
 .hobbys {
-  width: 48%; 
   border-radius: 10px;
   margin-top: 10px;
   width: 200px;
