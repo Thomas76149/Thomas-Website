@@ -74,3 +74,9 @@ body {
   height: auto;    
 }
 
+.impressum {
+    display: flex;  
+  justify-content: center; 
+  gap: 10px;  
+  felx: wrap;  
+}
