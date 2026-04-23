@@ -422,6 +422,7 @@ a {
   width: min(380px, 88%);
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: 50% 68%;
   border-radius: 999px;
   border: 1px solid rgba(154, 208, 255, 0.24);
   box-shadow:
@@ -429,6 +430,19 @@ a {
     0 28px 90px rgba(0, 0, 0, 0.55),
     0 0 120px rgba(86, 167, 255, 0.14);
   filter: contrast(1.04) saturate(1.03);
+}
+
+.heroPortrait::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  /* helps hide top-logo area + adds premium vignette */
+  background:
+    linear-gradient(180deg, rgba(6, 10, 18, 0.92) 0%, rgba(6, 10, 18, 0.0) 40%),
+    radial-gradient(circle at 50% 55%, rgba(0, 0, 0, 0.0) 58%, rgba(0, 0, 0, 0.55) 92%);
+  opacity: 0.55;
 }
 
 .heroPortrait__ring {
@@ -563,6 +577,7 @@ a {
   height: 56px;
   border-radius: 999px;
   object-fit: cover;
+  object-position: 50% 62%;
   border: 1px solid rgba(154, 208, 255, 0.22);
   box-shadow: 0 0 28px rgba(86, 167, 255, 0.12);
 }
