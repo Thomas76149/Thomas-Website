@@ -402,7 +402,7 @@ a {
 
 .hero__visual {
   position: relative;
-  min-height: 320px;
+  min-height: 460px;
   border-radius: calc(var(--radius) + 12px);
   border: 1px solid rgba(154, 208, 255, 0.18);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02) 55%, rgba(6, 10, 18, 0.6));
@@ -415,55 +415,63 @@ a {
   inset: 0;
   display: grid;
   place-items: center;
-  padding: 26px;
+  padding: 16px;
 }
 
 .heroPortrait__img {
-  width: min(380px, 88%);
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  object-position: 50% 68%;
-  border-radius: 999px;
-  border: 1px solid rgba(154, 208, 255, 0.24);
+  max-width: min(620px, calc(100% - 24px));
+  max-height: calc(100% - 24px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 22px;
+  border: 1px solid rgba(154, 208, 255, 0.22);
   box-shadow:
     0 0 0 1px rgba(0, 0, 0, 0.25) inset,
     0 28px 90px rgba(0, 0, 0, 0.55),
     0 0 120px rgba(86, 167, 255, 0.14);
   filter: contrast(1.04) saturate(1.03);
+  background: rgba(0, 0, 0, 0.22);
 }
 
 .heroPortrait::before {
   content: "";
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
+  inset: 14px;
+  border-radius: 24px;
   pointer-events: none;
-  /* helps hide top-logo area + adds premium vignette */
+  /* subtle premium frame overlay */
   background:
-    linear-gradient(180deg, rgba(6, 10, 18, 0.92) 0%, rgba(6, 10, 18, 0.0) 40%),
-    radial-gradient(circle at 50% 55%, rgba(0, 0, 0, 0.0) 58%, rgba(0, 0, 0, 0.55) 92%);
-  opacity: 0.55;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.0) 40%),
+    radial-gradient(circle at 30% 20%, rgba(120, 210, 255, 0.18), rgba(120, 210, 255, 0.0) 60%);
+  opacity: 0.9;
 }
 
 .heroPortrait__ring {
   position: absolute;
-  width: min(420px, 92%);
-  aspect-ratio: 1 / 1;
-  border-radius: 999px;
-  border: 1px solid rgba(154, 208, 255, 0.18);
-  box-shadow: 0 0 60px rgba(86, 167, 255, 0.18);
-  mask-image: radial-gradient(circle at 50% 50%, transparent 63%, #000 64%);
-  opacity: 0.9;
+  inset: 10px;
+  border-radius: 26px;
+  border: 1px solid rgba(154, 208, 255, 0.16);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.25) inset,
+    0 0 52px rgba(86, 167, 255, 0.16);
+  opacity: 0.95;
+}
+
+@media (min-width: 980px) {
+  .hero__visual {
+    min-height: 540px;
+  }
 }
 
 .heroPortrait__glow {
   position: absolute;
-  width: min(520px, 110%);
-  aspect-ratio: 1 / 1;
-  border-radius: 999px;
-  background: radial-gradient(circle at 50% 45%, rgba(120, 210, 255, 0.22), rgba(120, 210, 255, 0.0) 62%);
-  filter: blur(6px);
-  opacity: 0.85;
+  inset: -22px;
+  border-radius: 34px;
+  background: radial-gradient(circle at 50% 40%, rgba(120, 210, 255, 0.20), rgba(120, 210, 255, 0.0) 62%);
+  filter: blur(10px);
+  opacity: 0.75;
 }
 
 .hero__gridlines {
