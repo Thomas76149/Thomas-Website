@@ -22,6 +22,7 @@
       <nav class="nav" aria-label="Hauptnavigation">
         <a class="nav__link" href="#about">Über mich</a>
         <a class="nav__link" href="#projects">Projekte</a>
+        <a class="nav__link" href="#" data-fun-hub>thomas.fun</a>
         <a class="nav__link" href="#skills">Skills</a>
         <a class="nav__link" href="#contact">Kontakt</a>
       </nav>
@@ -41,6 +42,7 @@
     <div class="mobileNav" aria-hidden="true" id="mobileNav">
       <a class="mobileNav__link" href="#about">Über mich</a>
       <a class="mobileNav__link" href="#projects">Projekte</a>
+      <a class="mobileNav__link" href="#" data-fun-hub>thomas.fun</a>
       <a class="mobileNav__link" href="#skills">Skills</a>
       <a class="mobileNav__link" href="#contact">Kontakt</a>
       <a class="mobileNav__link mobileNav__link--accent" href="https://orbitex-demo.pages.dev" target="_blank" rel="noreferrer">Orbitex</a>
@@ -63,7 +65,8 @@
 
           <div class="hero__cta">
             <a class="btn btn--primary" href="#projects">Projekte ansehen</a>
-            <a class="btn btn--glass" href="#contact">Kontakt</a>
+            <a class="btn btn--glass" href="#" data-fun-hub>thomas.fun</a>
+            <a class="btn btn--ghost" href="#contact">Kontakt</a>
           </div>
 
           <div class="hero__stats" aria-label="Highlights">
@@ -162,48 +165,34 @@
       <div class="container">
         <div class="section__head reveal" data-reveal>
           <h2 class="section__title">Projekte</h2>
-          <p class="section__lead">Kleine Web‑Experimente und Spiele — liegen im Ordner <strong>spiele</strong> (kannst du mit dieser Seite zusammen deployen). Die große Sache ist die <a href="https://orbitex-demo.pages.dev" target="_blank" rel="noreferrer">Orbitex-Website</a> — daran war ich im Team beteiligt.</p>
+          <p class="section__lead">
+            Kleine Web‑Experimente und Spiele liegen auf <strong>thomas.fun</strong> — eigene Seite (live:
+            <a href="https://thomas-projekte.pages.dev" target="_blank" rel="noopener noreferrer">thomas-projekte.pages.dev</a>),
+            Stil wie <a href="https://neal.fun" target="_blank" rel="noopener noreferrer">neal.fun</a>.
+            Hier im Portfolio nur der Einstieg; die große Sache ist die
+            <a href="https://orbitex-demo.pages.dev" target="_blank" rel="noopener noreferrer">Orbitex-Website</a> — daran war ich im Team beteiligt.
+          </p>
         </div>
 
         <div class="cardGrid">
-          <a class="card reveal" data-reveal href="spiele/jet-kampf/index.html">
+          <a class="card reveal" data-reveal href="#" data-fun-hub>
             <div class="card__top">
-              <div class="card__icon" aria-hidden="true">🎮</div>
-              <div class="card__meta">Game</div>
+              <div class="card__icon" aria-hidden="true">✨</div>
+              <div class="card__meta">Mini-Projekte</div>
             </div>
-            <h3 class="card__title">Jet‑Kampf</h3>
-            <p class="card__text">Canvas‑Arcade: UFOs, Leben, Score — ohne Bilddateien, mit Touch‑Steuerung.</p>
-            <div class="card__link">Spielen <span aria-hidden="true">→</span></div>
-          </a>
-
-          <a class="card reveal" data-reveal href="spiele/adventskalender/index.html">
-            <div class="card__top">
-              <div class="card__icon" aria-hidden="true">🎁</div>
-              <div class="card__meta">UI</div>
-            </div>
-            <h3 class="card__title">Adventskalender</h3>
-            <p class="card__text">24 Türchen, Modal, Speicherstand, Dezember‑Logik &amp; Demo‑Modus.</p>
+            <h3 class="card__title">thomas.fun</h3>
+            <p class="card__text">Jet‑Kampf, Adventskalender, To‑Do, Satelliten‑Ping — alles auf einer übersichtlichen Seite.</p>
             <div class="card__link">Öffnen <span aria-hidden="true">→</span></div>
           </a>
 
-          <a class="card reveal" data-reveal href="spiele/todo-app/index.html">
-            <div class="card__top">
-              <div class="card__icon" aria-hidden="true">✅</div>
-              <div class="card__meta">App</div>
-            </div>
-            <h3 class="card__title">To‑Do Liste</h3>
-            <p class="card__text">Vanilla JS: Filter, erledigt löschen, alles in localStorage.</p>
-            <div class="card__link">Öffnen <span aria-hidden="true">→</span></div>
-          </a>
-
-          <a class="card reveal" data-reveal href="spiele/spielchen.html">
+          <a class="card reveal" data-reveal href="https://orbitex-demo.pages.dev" target="_blank" rel="noreferrer">
             <div class="card__top">
               <div class="card__icon" aria-hidden="true">🛰️</div>
-              <div class="card__meta">Game</div>
+              <div class="card__meta">Team</div>
             </div>
-            <h3 class="card__title">Satelliten‑Ping</h3>
-            <p class="card__text">Kurzes Reflex‑Spiel im gleichen Look — lokal oder mit deployter Seite spielbar.</p>
-            <div class="card__link">Spielen <span aria-hidden="true">→</span></div>
+            <h3 class="card__title">Orbitex</h3>
+            <p class="card__text">Fiktive Raumfahrt-Firma — großes Schul- &amp; Web-Projekt mit Story und vielen Sektionen.</p>
+            <div class="card__link">Website <span aria-hidden="true">→</span></div>
           </a>
         </div>
       </div>
@@ -275,6 +264,8 @@
     </div>
   </footer>
 
+  <script src="js/site-config.js?v=1"></script>
+  <script src="js/fun-hub.js?v=1"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
